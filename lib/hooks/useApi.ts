@@ -11,7 +11,7 @@ export function useGetAPI(apiName: string, params?: object): any {
         setResult(res.data)
       })
       .catch((err) => {
-        if (err.response.status == 404) router.push("/404")
+        if (err.response.status == 404) router.push("/404", "/404")
       })
   }, [params, apiName])
   return result
