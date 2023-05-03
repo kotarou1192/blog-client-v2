@@ -1,14 +1,14 @@
 build-prod:
-	docker-compose build
+	docker compose build
 
 run-prod:
-	docker-compose up --build -d
+	docker compose up --build -d
 
 stop-prod:
-	docker-compose down
+	docker compose down
 
 run-dev:
-	docker-compose -f docker-compose.dev.yml up -d --build
+	docker compose -f docker-compose.dev.yml up -d --build
 
 stop-dev:
-	docker-compose -f docker-compose.dev.yml down
+	docker compose -f docker-compose.dev.yml down
