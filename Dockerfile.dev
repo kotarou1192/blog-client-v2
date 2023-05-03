@@ -6,6 +6,7 @@ EXPOSE 3000
 WORKDIR /usr/src/app
 
 COPY . .
-RUN yarn install --frozen-lockfile
+RUN yarn upgrade
+RUN yarn
 
 CMD [ "yarn", "dev" ]

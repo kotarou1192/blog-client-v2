@@ -2,7 +2,7 @@ FROM node:18 AS deps
 
 ENV NODE_ENV production
 
-EXPOSE 3000
+EXPOSE 10000
 
 WORKDIR /usr/src/app
 COPY ["package.json", "yarn.lock", "./"]
